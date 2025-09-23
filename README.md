@@ -7,6 +7,5 @@
 
 ![Windows Original Sidebar](https://i.ibb.co/tw7QMnvx/cp-sidebar-m.png)
 there's what it used to look like
-
-![New - Windows AI Sidebar](https://i.ibb.co/jc93L5h/Screenshot-2025-09-23-at-12-56-29-pm.png)
+![Windows AI Sidebar](https://i.ibb.co/jc93L5h/Screenshot-2025-09-23-at-12-56-29-pm.png)
 this is what this one looks like
