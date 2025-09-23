@@ -9,7 +9,7 @@ iconPath := A_MyDocuments "\cop.png"
 
 if !FileExist(iconPath)
 {
-    UrlDownloadToFile, https://i.ibb.co/jZ8YvP1y/cop.png, %iconPath%
+    UrlDownloadToFile, https://i.ibb.co/bj5ZxnL1/cop-final.png, %iconPath%
 }
 
 
@@ -68,3 +68,4 @@ return
 
 ; Copyright American Computer Software Company
 ; Copilot Sidebar Redux FINAL
+
