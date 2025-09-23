@@ -37,4 +37,5 @@ if you keep getting the new one, keep trying to go to the old one, it works even
 their new one, copilot.microsoft.com, cant be edited with traditional element-changer tools, so i need to figure out something else <br />
 
 **closing notes** <br />
-recommend doing all the edge things first, then running the exe/ahk
+recommend doing all the edge things first, then running the exe/ahk <br />
+if u dont have a black background, this might not look great, i recommend a darker/blackish background and using transparent tb with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB)
