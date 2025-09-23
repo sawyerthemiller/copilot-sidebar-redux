@@ -9,7 +9,7 @@ iconPath := A_MyDocuments "\cop.png"
 
 if !FileExist(iconPath)
 {
-    UrlDownloadToFile, https://i.ibb.co/bj5ZxnL1/cop-final.png, %iconPath%
+    UrlDownloadToFile, https://i.ibb.co/fdTg6p1k/cop.png, %iconPath%
 }
 
 
@@ -17,7 +17,7 @@ if !FileExist(iconPath)
 ; --- GUI SETUP ---
 Gui, +AlwaysOnTop -Caption +ToolWindow   		; Always on top, no title bar, tool window
 Gui, Color, 0x000000                    		; Background set to black
-Gui, Add, Picture, w25 h24 gOpenCopilot, %iconPath%  	; Use the icon from Documents
+Gui, Add, Picture, w30 h30 gOpenCopilot, %iconPath%  	; Use the icon from Documents
 WinSet, TransColor, 0x000000             		; Make black background transparent
 
 
@@ -68,4 +68,5 @@ return
 
 ; Copyright American Computer Software Company
 ; Copilot Sidebar Redux FINAL
+
 
