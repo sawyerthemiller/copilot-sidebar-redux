@@ -8,6 +8,8 @@
 | Windows Original Sidebar | Windows AI Sidebar |
 |---------------------------|---------------------|
 | <img src="https://i.ibb.co/tw7QMnvx/cp-sidebar-m.png" width="350" height="770"> | <img src="https://i.ibb.co/jc93L5h/cp-sidebar-n.png" width="350" height="770"> |
+|---------------------------|---------------------|
+| Diffs in actual results of the former or latter are not the responsibilty of author |
 
 **can we ever get it back to exactly how it was** <br />
 no. microsoft develoepd the original one in a custom web-view bar, and also, they've deprecated all ways to get the old copilot UI back as of 2025 <br />
