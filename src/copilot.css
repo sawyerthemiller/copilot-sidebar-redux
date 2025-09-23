@@ -1,0 +1,100 @@
+/* COPILOT SIDEBAR REDUX */
+/* AMERICAN COMPUTER SOFTWARE COMPANY */
+
+div.relative.max-h-full * {
+  border-radius: 10px;
+}
+
+#app {
+  background-color: #11100f;
+}
+
+#app * {
+  box-shadow: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  font-family: 'Segoe UI';
+}
+
+div div h1 {
+  color: white;
+  font-weight: bold;
+}
+
+div div h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 100px auto 0;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/6372ab786c0882214db6e07c/6126b949-2e83-47f9-b5de-06306b267fc7/Copilot+for+Word+Colorful.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.h-full,
+div.absolute.h-16.w-full.overflow-hidden,
+div.pointer-events-auto.relative.flex.flex-col.overflow-hidden {
+  background-color: #11100f;
+}
+
+div.pointer-events-auto.relative.flex.flex-col.overflow-hidden {
+  border: 2px solid white;
+}
+
+div.relative.max-h-full.w-expanded-composer.max-w-chat {
+  visibility: hidden;
+}
+
+div.relative.max-h-full.w-expanded-composer.max-w-chat * {
+  background-color: #3b3a39;
+  visibility: visible;
+  border-radius: 5px;
+}
+
+textarea.font-ligatures-none.inline-block.min-h-user-input.w-full {
+  border: 1px solid #3b3a39;
+}
+
+[data-testid="composer"] * {
+  background-color: transparent;
+}
+
+div.mx-auto.flex.w-full.flex-col.gap-3.px-2 {
+  margin-bottom: 10px;
+}
+
+div.relative.bottom-0.flex.justify-between {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+div.relative.bottom-0.flex.justify-between > * > * > * > * {
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+div[class~="bg-gradient-to-b"][class~="from-white/90"][class~="to-white/0"][class~="dark:from-black/30"][class~="dark:to-midnight-800/10"] {
+  background-color: #3b3a39;
+  height: 105px;
+}
+
+button.absolute.flex.items-center.justify-center.rounded-xl * {
+  border: 0px;
+}
+
+div.scrollbar-stable.overflow-y-auto.px-4.max-h-user-input-shallow {
+  position: relative;
+  right: 5px;
+}
+
+span.px-1.text-xs {
+  margin-bottom: 1px;
+}
+
+div.relative.flex.grow.flex-col.overflow-hidden {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 0px;
+}
