@@ -38,4 +38,7 @@ their new one, copilot.microsoft.com, cant be edited with traditional element-ch
 
 **closing notes** <br />
 recommend doing all the edge things first, then running the exe/ahk <br />
-if u dont have a black background, this might not look great, i recommend a darker/blackish background and using transparent tb with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB)
+if u dont have a black background, this might not look great, i recommend a darker/blackish background and using transparent tb with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB) <br />
+u could also modify the colors in the ahk script. as u could tell, i tried to make it transparent, but to no avail
+
+there might be some other dll-call method or something but that's too involved and invasive imo
