@@ -5,5 +5,8 @@
 - you will not be able to use the bell to access notifications
 - to get notifications, click on the date and time thing
 
-![Windows Original Sidebar](https://www.ghacks.net/wp-content/uploads/2024/02/windows-copilot-icon-taskbar.png)
+![Windows Original Sidebar](https://i.ibb.co/tw7QMnvx/cp-sidebar-m.png)
 there's what it used to look like
+
+![New - Windows AI Sidebar](https://i.ibb.co/jc93L5h/Screenshot-2025-09-23-at-12-56-29-pm.png)
+this is what this one looks like
