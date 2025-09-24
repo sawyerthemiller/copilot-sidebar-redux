@@ -1,5 +1,4 @@
-;  Sorry for the weird spacing in the file, tryna be transparent as with what it does  
-
+; Sorry for the weird spacing in the file, tryna be transparent as with what it does  
 #NoTrayIcon  ; Hide tray icon
 
 
@@ -14,10 +13,11 @@ if !FileExist(iconPath)
 
 
 
+; If you wanted to change the colors, you'd do it below
 ; --- GUI SETUP ---
 Gui, +AlwaysOnTop -Caption +ToolWindow   		; Always on top, no title bar, tool window
 Gui, Color, 0x000000                    		; Background set to black
-Gui, Add, Picture, w30 h30 gOpenCopilot, %iconPath%  	; Use the icon from Documents
+Gui, Add, Picture, w27.5 h27.5 gOpenCopilot, %iconPath%  	; Use the icon from Documents
 WinSet, TransColor, 0x000000             		; Make black background transparent
 
 
@@ -68,5 +68,3 @@ return
 
 ; Copyright American Computer Software Company
 ; Copilot Sidebar Redux FINAL
-
-
