@@ -1,70 +1,83 @@
-; Sorry for the weird spacing in the file, tryna be transparent as with what it does  
-#NoTrayIcon  ; Hide tray icon
+#NoTrayIcon
+#SingleInstance
 
 
+; ==========================================================================================
 
-; --- SETUP AND DL ICON PATH ---
-iconPath := A_MyDocuments "\cop.png"
 
+; --- SETUP ---
+iconPath := A_MyDocuments . "\cop.png"
 if !FileExist(iconPath)
-{
     UrlDownloadToFile, https://i.ibb.co/fdTg6p1k/cop.png, %iconPath%
-}
 
 
-
-; If you wanted to change the colors, you'd do it below
-; --- GUI SETUP ---
-Gui, +AlwaysOnTop -Caption +ToolWindow   		; Always on top, no title bar, tool window
-Gui, Color, 0x000000                    		; Background set to black
-Gui, Add, Picture, w27.5 h27.5 gOpenCopilot, %iconPath%  	; Use the icon from Documents
-WinSet, TransColor, 0x000000             		; Make black background transparent
+; ==========================================================================================
 
 
+; --- SIZES ---
+borderSize := 1           ; thickness of white border
+innerW := 28              ; width of black box (and image)
+innerH := 28              ; height of black box (and image)
 
-; --- POSITION GUI IN LOWER-RIGHT CORNER ---
+guiW := innerW + 2*borderSize
+guiH := innerH + 2*borderSize
+
+; --- CREATE MAIN GUI (white border) ---
+Gui, +AlwaysOnTop -Caption +ToolWindow
+Gui, Color, FFFFFF        ; white border
+
+; --- ADD INNER BLACK BOX ---
+Gui, Add, Progress, x%borderSize% y%borderSize% w%innerW% h%innerH% Background000000 Disabled
+
+; --- ADD CLICKABLE IMAGE ON TOP OF BLACK BOX ---
+Gui, Add, Picture, x%borderSize% y%borderSize% w%innerW% h%innerH% BackgroundTrans gOpenCopilot, %iconPath%
+
+
+; ==========================================================================================
+
+
+; --- SHOW GUI AT LOWER RIGHT ---
 SysGet, MonitorWorkArea, MonitorWorkArea
-x := MonitorWorkAreaRight - 55           ; 55px from right edge
-y := MonitorWorkAreaBottom + 4           ; Slightly below bottom edge
-Gui, Show, x%x% y%y% NoActivate          ; Show GUI without taking focus
+x := MonitorWorkAreaRight - 97  ; Keep your offset; change to -guiW for true corner
+y := MonitorWorkAreaBottom + 14  ; Corrected to align bottom
+Gui, Show, x%x% y%y% w%guiW% h%guiH% NoActivate
 
-
+; --- GET GUI ID FOR TARGETED ALWAYS ON TOP ---
+Gui, +LastFound
+guiID := WinExist()
 
 ; --- KEEP GUI ALWAYS ON TOP ---
 SetTimer, KeepOnTop, 500
 return
 
-; Timer function: force always-on-top every 500ms
 KeepOnTop:
-    WinSet, AlwaysOnTop, On, ahk_class AutoHotkeyGUI
+    WinSet, AlwaysOnTop, On, ahk_id %guiID%
 return
 
 
+; ==========================================================================================
 
-; --- OPEN / TOGGLE COPILOT IN EDGE ---
+
+; --- COPILOT APP LOGIC ---
 OpenCopilot:
-    ; If Edge is already running
     IfWinExist, ahk_exe msedge.exe
     {
         WinGet, winState, MinMax, ahk_exe msedge.exe
-        if (winState = -1)   ; Already MINIMISED
+        if (winState = -1)
         {
             WinRestore, ahk_exe msedge.exe
             WinActivate, ahk_exe msedge.exe
         }
-        else                 ; Already OPEN
-        {
+        else
             WinMinimize, ahk_exe msedge.exe
-        }
     }
     else
-    {
-        ; Launch Copilot in Edge app mode
         Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -app="https://www.copilot.com/"
-    }
 return
 
 
+; ==========================================================================================
 
-; Copyright American Computer Software Company
-; Copilot Sidebar Redux FINAL
+
+; Copilot Sidebar REDUX
+; American Computer Software Company
