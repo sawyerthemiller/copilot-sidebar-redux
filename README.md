@@ -21,7 +21,7 @@ we also have to deal with compression and icon type blocks from autohotkey (no s
 
 **how does it work** <br />
 it's an ahk script to put a copilot icon over the bell icon and make it stay on top <br />
-when you click it it will open a copilot window. then it will work by minimising or maxing and that window.
+when you click it it will open a copilot window. then it will work by minimising or bringing back up that window.
 
 it's on you to resize the window to your liking or push it to the right quadrant of the screen, my code won't do that
 
