@@ -7,7 +7,7 @@
 
 | Windows Original Sidebar | Windows AI Sidebar |
 |---------------------------|---------------------|
-| <img src="https://i.ibb.co/tw7QMnvx/cp-sidebar-m.png" width="350" height="770"> | <img src="https://i.ibb.co/jc93L5h/cp-sidebar-n.png" width="350" height="770"> |
+| <img src="https://i.ibb.co/tw7QMnvx/cp-sidebar-m.png" width="350" height="770"> | <img src="https://i.ibb.co/Qvr9p8DP/cp-n-upd.png" width="350" height="770"> |
 | Diffs in actual results of the former or latter are not the responsibilty of author |
 
 **can we ever get it back to exactly how it was** <br />
@@ -25,6 +25,10 @@ when you click it it will open a copilot window. then it will work by minimising
 
 it's on you to resize the window to your liking or push it to the right quadrant of the screen, my code won't do that
 
+**my copilot button is not where its supposed to be** <br />
+the script is made for uhd screens. it can be made to go on smaller screens <br />
+you will see where offset for the screen is supposed to be in the ahk code. for hd screens, i recommend cutting the curren values in half
+
 **the css for mine isnt working / it still looks like the new copilot** <br />
 please make sure u know -- u have to modify the window size urself and LEAVE IT OPEN <br />
 go to [copilot's standalone page](https://www.copilot.com)
@@ -39,7 +43,8 @@ their new one, copilot.microsoft.com, cant be edited with traditional element-ch
 
 **closing notes** <br />
 recommend doing all the edge things first, then running the exe/ahk <br />
-if u dont have a black background, this might not look great, i recommend a darker/blackish background and using transparent tb with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB) <br />
-u could also modify the colors in the ahk script. as u could tell, i tried to make it transparent, but to no avail
 
+i recommend a high-quality background and using transparent tb addon with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB) <br />
+
+u could also modify the colors in the ahk script. as u could tell, i tried to make it transparent, but to no avail
 there might be some other dll-call method or something but that's too involved and invasive imo
