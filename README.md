@@ -39,11 +39,11 @@ click extension > favicon changer > change to 'https://i.ibb.co/ZztcwmW0/sidebar
 
 microsoft is in the process of deprecating www.copilot.com, which these changes rely on <br />
 if you keep getting the new one, keep trying to go to the old one, it works eventually (for now) <br />
-their new one, copilot.microsoft.com, cant be edited with traditional element-changer tools, so i need to figure out something else <br />
+their new one, copilot.microsoft.com, can't be edited with traditional element-changer tools, so i need to figure out something else <br />
 
 **closing notes** <br />
 recommend doing all the edge things first, then running the exe/ahk <br />
-i recommend a high-quality background and using transparent tb addon with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB)
+recommend a high-quality background and using transparent tb addon with windhawk or [translucent tb](https://github.com/TranslucentTB/TranslucentTB)
 
 u could also modify the colors in the ahk script. i tried to make it transparent, but to no avail <br />
 there might be some other dll-call method or something but that's too involved and invasive imo
