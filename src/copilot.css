@@ -71,7 +71,7 @@ div.relative.bottom-0.flex.justify-between {
 }
 
 div.relative.bottom-0.flex.justify-between > * > * > * > * {
-  border: 1px solid;
+  border: 2px solid;
   border-radius: 10px;
 }
 
@@ -97,4 +97,17 @@ div.relative.flex.grow.flex-col.overflow-hidden {
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border: 0px;
+}
+
+div.flex.h-4.shrink-0.items-center.rounded {
+  display: none;
+}
+
+button.text-foreground-450 {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.bg-current.forced-color-adjust-none {
+  display: none
 }
