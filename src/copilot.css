@@ -111,3 +111,7 @@ button.text-foreground-450 {
 div.bg-current.forced-color-adjust-none {
   display: none
 }
+
+button.relative.flex.items-center.text-foreground-800 * {
+  border: 0px
+}
