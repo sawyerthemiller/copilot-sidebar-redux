@@ -38,7 +38,7 @@ Gui, Add, Picture, x%borderSize% y%borderSize% w%innerW% h%innerH% BackgroundTra
 
 ; --- SHOW GUI AT LOWER RIGHT ---
 SysGet, MonitorWorkArea, MonitorWorkArea
-x := MonitorWorkAreaRight - 65  ; Keep your offset; change to -guiW for true corner
+x := MonitorWorkAreaRight - 65  ; Keep your offset or change for true corner
 y := MonitorWorkAreaBottom + 14  ; Corrected to align bottom
 Gui, Show, x%x% y%y% w%guiW% h%guiH% NoActivate
 
