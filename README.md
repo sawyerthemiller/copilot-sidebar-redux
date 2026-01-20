@@ -17,7 +17,7 @@ we also have to deal with compression and icon type blocks from autohotkey (no s
 **requires** <br />
 - [brave browser](https://brave.com/) with the extensions [stylebot](https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha/), [favicon change pro](https://chromewebstore.google.com/detail/favicon-changer-pro/gmeifkannaohahogkfoljeceabndhpif), [tab renamer](https://chromewebstore.google.com/detail/tab-renamer/mncaahedchkhclokjmfjbennhbeceecl) installed <br />
 - [autohotkey version one](https://www.autohotkey.com/) <br />
-- why would i pin edge - you dont need to but if u dont the favicon will always show in the taskbar 
+- why would i pin the browser - you dont need to but if u dont the favicon will always show in the taskbar 
 
 **how does it work** <br />
 it's an ahk script to put a copilot icon over the bell icon and make it stay on top <br />
