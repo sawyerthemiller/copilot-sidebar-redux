@@ -15,7 +15,7 @@ no. microsoft develoepd the original one in a custom web-view bar, and also, the
 we also have to deal with compression and icon type blocks from autohotkey (no svg etc)
 
 **requires** <br />
-- edge (pinned to ur taskbar) with the extensions [stylebot](https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha/), [favicon change pro](https://chromewebstore.google.com/detail/favicon-changer-pro/gmeifkannaohahogkfoljeceabndhpif), [tab renamer](https://chromewebstore.google.com/detail/tab-renamer/mncaahedchkhclokjmfjbennhbeceecl) installed <br />
+- [brave browser](https://brave.com/) with the extensions [stylebot](https://chromewebstore.google.com/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha/), [favicon change pro](https://chromewebstore.google.com/detail/favicon-changer-pro/gmeifkannaohahogkfoljeceabndhpif), [tab renamer](https://chromewebstore.google.com/detail/tab-renamer/mncaahedchkhclokjmfjbennhbeceecl) installed <br />
 - [autohotkey version one](https://www.autohotkey.com/) <br />
 - why would i pin edge - you dont need to but if u dont the favicon will always show in the taskbar 
 
