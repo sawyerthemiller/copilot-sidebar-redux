@@ -2,7 +2,7 @@
 #SingleInstance
 
 
-; ============================================================================================
+; ==========================================================================================
 
 
 ; --- SETUP ---
@@ -11,7 +11,7 @@ if !FileExist(iconPath)
     UrlDownloadToFile, https://i.ibb.co/fdTg6p1k/cop.png, %iconPath%
 
 
-; ============================================================================================
+; ==========================================================================================
 
 
 ; --- SIZES ---
@@ -33,12 +33,12 @@ Gui, Add, Progress, x%borderSize% y%borderSize% w%innerW% h%innerH% Background00
 Gui, Add, Picture, x%borderSize% y%borderSize% w%innerW% h%innerH% BackgroundTrans gOpenCopilot, %iconPath%
 
 
-; ============================================================================================
+; ==========================================================================================
 
 
 ; --- SHOW GUI AT LOWER RIGHT ---
 SysGet, MonitorWorkArea, MonitorWorkArea
-x := MonitorWorkAreaRight - 97  ; Keep your offset; change to -guiW for true corner
+x := MonitorWorkAreaRight - 65  ; Keep your offset; change to -guiW for true corner
 y := MonitorWorkAreaBottom + 14  ; Corrected to align bottom
 Gui, Show, x%x% y%y% w%guiW% h%guiH% NoActivate
 
@@ -55,28 +55,28 @@ KeepOnTop:
 return
 
 
-; ============================================================================================
+; ==========================================================================================
 
 
 ; --- COPILOT APP LOGIC ---
 OpenCopilot:
-    IfWinExist, ahk_exe msedge.exe
+    IfWinExist, ahk_exe brave.exe
     {
-        WinGet, winState, MinMax, ahk_exe msedge.exe
+        WinGet, winState, MinMax, ahk_exe brave.exe
         if (winState = -1)
         {
-            WinRestore, ahk_exe msedge.exe
-            WinActivate, ahk_exe msedge.exe
+            WinRestore, ahk_exe brave.exe
+            WinActivate, ahk_exe brave.exe
         }
         else
-            WinMinimize, ahk_exe msedge.exe
+            WinMinimize, ahk_exe brave.exe
     }
     else
-        Run, "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -app="https://www.copilot.com/"
+        Run, "C:\Users\plummydahusky\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe" -app="https://www.copilot.com/"
 return
 
 
-; ============================================================================================
+; ==========================================================================================
 
 
 ; Copilot Sidebar REDUX
